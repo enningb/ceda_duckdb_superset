@@ -1,0 +1,14 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      #path: ./ceda_duckdb_home/jaffle_shop.duckdb
+      path: ../shared/jaffle_shop.duckdb
+      attach:
+        - path: "../shared/analytics.duckdb"
+          alias: analytics
+        - path: "../shared/dw.duckdb"
+          alias: dw
+        - path: "../shared/eencijfer.duckdb"
+          alias: eencijfer

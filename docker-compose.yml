@@ -1,15 +1,15 @@
 version: "3.7"
 
 services:
-  jaffle_shop_duckdb:
+  ceda_duckdb:
     build:
-      context: ./jaffle_shop_duckdb
+      context: ./ceda_duckdb
       dockerfile: Dockerfile
     restart: always
     ports:
       - "8080:8080"
     volumes:
-      - ./shared:/app/jaffle_shop_duckdb_home/
+      - ./shared:/app/ceda_duckdb_home/
   superset:
     build:
       context: ./superset
@@ -18,10 +18,11 @@ services:
     environment:
       SUPERSET_ADMIN: ${SUPERSET_ADMIN}
       SUPERSET_PASSWORD: ${SUPERSET_PASSWORD}
+      SUPERSET_SECRET_KEY: ${SUPERSET_PASSWORD}
     ports:
       - "8088:8088"
     volumes:
       - ./shared:/app/superset_home/
       - ./superset/assets:/app/superset_home/assets
     depends_on:
-      - jaffle_shop_duckdb
+      - ceda_duckdb

@@ -1,0 +1,24 @@
+version: 2
+sources:
+  - name: eencijfer
+    database: eencijfer
+    schema: main
+    tables:
+      - name: Croho
+      - name: Croho_vest
+      - name: Dec_actuele_instelling
+      - name: Dec_brinnummer
+      - name: Dec_brinvestigingsnummer
+      - name: Dec_ho_inst
+      - name: Dec_isat
+      - name: Dec_landcode
+      - name: Dec_nationaliteitscode
+      - name: Dec_postcodecijfers_2023
+      - name: Dec_postcodecijfers_2024
+      - name: Dec_vakcode
+      - name: Dec_vestnr_ho
+      - name: Dec_vestnr_ho_compleet
+      - name: Dec_vooropl
+      - name: Dec_vopl
+      - name: EV21RI24
+      - name: VAKHAVW_21RI

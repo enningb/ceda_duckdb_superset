@@ -1,7 +1,7 @@
-# jaffle_shop_duckdb_superset
+# ceda_duckdb_superset
 ---
 
-This is a simple project using [dbt-duckdb](https://github.com/duckdb/dbt-duckdb) and [Apache Superset](https://superset.apache.org/) to build an all-in-one Modern Data Stack which can be used on your laptop without Cloud Stacks.
+This is a simple project using [dbt-duckdb](https://github.com/duckdb/dbt-duckdb) and [Apache Superset](https://superset.apache.org/) to build an all-in-one Modern Data Stack which can be used on your laptop without Cloud Stacks. It is a fork of [this project](https://github.com/kyaukyuai/jaffle_shop_duckdb_superset).
 
 It's inspired by this article: [Modern Data Stack in a Box with DuckDB](https://duckdb.org/2022/10/12/modern-data-stack-in-a-box.html).
 The specific configuration for implementation is as follows.
@@ -41,5 +41,5 @@ Just 2 steps!
 
 # References
 
-- [dbt-labs/jaffle_shop_duckdb](https://github.com/dbt-labs/jaffle_shop_duckdb/)
+- [dbt-labs/ceda_duckdb](https://github.com/dbt-labs/ceda_duckdb/)
  

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dw
+    database: dw
+    schema: main
+    tables:
+      - name: Herkomst
